@@ -70,9 +70,9 @@ letter-spacing: 0.5px;
 
 .divInfo{
    position: relative;
-    margin: 2% 3% 5% 3%;
+    margin: 2% 3% 6% 3%;
     display: grid;
-    gap: 2%;
+    gap: 3%;
 }
 .divInfo p {
     font-size: 93%;
@@ -93,15 +93,21 @@ letter-spacing: 0.5px;
     border: none;
     color: #fff;
     font-size: 1.5vw;
-    text-decoration: none;
+    background-color: #1d1227af;
+    cursor: pointer;
+    color: #ffffff;
     font-weight: 600;
-    position: relative; 
-    transition: transform 0.3s ease;
-    letter-spacing: 1px;
-    /* margin: 0% 24%; */
+    border-radius: 25px;
+    padding: 2% ;
 }
-.visitarSitio:before {
-    /* text-align: center; */
+
+.visitarSitio:hover{
+    background-color: rgb(35,112,128);
+    background: linear-gradient(13deg, rgba(35, 112, 128, 0.795) 1%, rgba(88,61,126,1) 67%, rgba(93,56,126,1) 91%);
+  }
+  
+/* .visitarSitio:before {
+    /* text-align: center; 
     content: "";
     position: absolute;
     background: #ffffff;
@@ -115,4 +121,4 @@ letter-spacing: 0.5px;
 
 .visitarSitio:hover:before {
     width: 50%;
-  }
+  } */
