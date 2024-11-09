@@ -1,0 +1,15 @@
+{
+    "bienvenidos": "Welcome!",
+    "proyectos": "Projects",
+    "herramientas": "Tools",
+    "contacto": "Contact",
+    "sobreMi": "About Me",
+    "nombre": "Keyla Muñoz",
+    "apellido": "Muñoz",
+    "titulo": "WEB DEVELOPER",
+    "descripcion": "Hello! I'm Keyla Muñoz, a Web Developer focused on creating innovative and functional websites. I specialize in <strong>Frontend development</strong> with <strong>React.js</strong>, and I'm currently deepening my knowledge in <strong>Backend development</strong> with <strong>Node.js</trong> and <strong>NoSQL</strong> databases. I'm passionate about learning and applying new technologies, and I'm seeking opportunities where I can contribute my skills and continue growing professionally.",
+    "cv": "VIEW MY CV",
+    "visitarSitio": "VISIT SITE",
+    "derechos": "All rights reserved.",
+    "contactame": "Contact me!"
+}
