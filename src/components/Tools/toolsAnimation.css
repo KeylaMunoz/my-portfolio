@@ -41,7 +41,7 @@
   }
   
   .tools-icon:nth-child(1) {
-    animation: rotate 9s infinite ease-in-out; 
+    animation: rotate 10s infinite ease-in-out; 
     transform-origin: center;
     animation-delay: 0s;
   
