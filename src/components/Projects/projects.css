@@ -106,19 +106,3 @@ letter-spacing: 0.5px;
     background: linear-gradient(13deg, rgba(35, 112, 128, 0.795) 1%, rgba(88,61,126,1) 67%, rgba(93,56,126,1) 91%);
   }
   
-/* .visitarSitio:before {
-    /* text-align: center; 
-    content: "";
-    position: absolute;
-    background: #ffffff;
-    width: 6%;
-    height: 1.3px;
-    top: 100%;
-    transform: translate(0%, 0%);
-    transition: all .3s ease;
-    z-index: -1;
-  }
-
-.visitarSitio:hover:before {
-    width: 50%;
-  } */
