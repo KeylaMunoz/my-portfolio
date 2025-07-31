@@ -1,18 +1,17 @@
+import { Box } from "@mui/material"
 import Item from "./Item"
-import './projects.css'
-
 const ItemProjects = ({projects}) => {
 
    
 
     return(
-        <div className='conteinetProjects'>
+        <Box sx={{  flexWrap: 'wrap', display: "flex", justifyContent: "center" , gap: "5%"}}>
             {
                 projects.map( (project) => (
                 <Item key={project.id} project = {project} />
                 ))
             }
-        </div>
+        </Box>
     )
 }
  

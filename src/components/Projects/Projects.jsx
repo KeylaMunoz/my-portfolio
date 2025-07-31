@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import data from '../../data/data.js'
 import { useTranslation } from 'react-i18next';
-import './projects.css'
 
 const Projects = () => { 
 

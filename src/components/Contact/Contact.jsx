@@ -3,17 +3,16 @@ import { useState } from 'react';
 
     const Contact = () => {
         
-
     return (
         <section>
             <div className="containerContact">
                 <div className="icon-container">
                     <div className="icon-front">
-                        <img src="https://img.icons8.com/color/512/linkedin.png" className="icon linkedin" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" className="icon linkedin" />
                     </div>
                     <div className="icon-back">
                         <a href="https://www.linkedin.com/in/keyla-abigail-mu%C3%B1oz-1b1755287/  https://wa.me/5493811234567?text=Hola%2C%20estoy%20interesado%20en%20tus%20productos" target="_blank">
-                            <p>Linkedin Keyla Muñoz</p>
+                            <p>Keyla Muñoz</p>
                         </a>
                     </div>
                 </div>
@@ -24,7 +23,7 @@ import { useState } from 'react';
                     </div>
                     <div className="icon-back">
                         <a href="https://github.com/KeylaMunoz" target="_blank">
-                            <p>GitHub Keyla Muñoz</p>
+                            <p>Keyla Muñoz</p>
                         </a>
                     </div>
                 </div>

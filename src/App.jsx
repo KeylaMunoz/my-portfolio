@@ -1,13 +1,14 @@
-import NavBar from './components/NavBar/NavBar';
-import InfoPersonal from './components/AboutMe/AboutMe';
+import AppBar from './components/NavBar/ResponsiveAppBar';
+import AboutMe from './components/AboutMe/AboutMeMUI';
 import Projects from './components/Projects/Projects';
 import Tools from './components/Tools/Tools';
+import ToolsMUI from './components/Tools/toolsMUI';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
 import { useTranslation } from 'react-i18next';
 import { Suspense } from 'react';
-
+import { Typography } from '@mui/material';
 
 function Welcome(){
   const { t, i18n } = useTranslation();
@@ -18,21 +19,21 @@ function Welcome(){
 
   return (
     <div>
-      <NavBar changeLanguage={changeLanguage} />
-      <h1 className='bienvenidos'>{t('bienvenidos')}</h1>
+      <AppBar changeLanguage={changeLanguage} />
       <div id="aboutMe">
-        <InfoPersonal />
+        <AboutMe/>
       </div>
+      <br />
       <div id="projects">
-        <h1 className='tituloSeccion'>{t('proyectos')}</h1>
+        <Typography sx={{ml: "5%"}} variant="h1">{t('proyectos')}</Typography>
         <Projects/>
       </div>
       <div id="tools">
-        <h1 className='tituloSeccion'>{t('herramientas')}</h1>
-        <Tools/>
+        <Typography sx={{ml: "5%"}} variant="h1">{t('herramientas')}</Typography>
+        <ToolsMUI/>
       </div>
       <div id="contact">
-        <h1 className='tituloSeccion' >{t('contacto')}</h1>
+        <Typography  sx={{ml: "5%"}} variant="h1">{t('contacto')}</Typography>
         <Contact/>
       </div>
       <Footer/>
