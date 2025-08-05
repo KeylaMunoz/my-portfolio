@@ -1,7 +1,6 @@
 import AppBar from './components/NavBar/ResponsiveAppBar';
 import AboutMe from './components/AboutMe/AboutMeMUI';
 import Projects from './components/Projects/Projects';
-import Tools from './components/Tools/Tools';
 import ToolsMUI from './components/Tools/toolsMUI';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
@@ -25,16 +24,18 @@ function Welcome(){
       </div>
       <br />
       <div id="projects">
-        <Typography sx={{ml: "5%"}} variant="h1">{t('proyectos')}</Typography>
+        <Typography sx={{ml: "5%", textTransform: "uppercase", letterSpacing: "0.2vh"}} variant="h2">{t('proyectos')}</Typography>
         <Projects/>
+        <br />
       </div>
       <div id="tools">
-        <Typography sx={{ml: "5%"}} variant="h1">{t('herramientas')}</Typography>
+        <Typography sx={{ml: "5%", textTransform: "uppercase", fontWeight: "400", letterSpacing: "0.2vh"}} variant="h2">{t('herramientas')}</Typography>
         <ToolsMUI/>
       </div>
       <div id="contact">
-        <Typography  sx={{ml: "5%"}} variant="h1">{t('contacto')}</Typography>
+        <Typography  sx={{ml: "5%", textTransform: "uppercase", fontWeight: "400", letterSpacing: "0.2vh"}} variant="h2">{t('contacto')}</Typography>
         <Contact/>
+        <br />
       </div>
       <Footer/>
     </div>

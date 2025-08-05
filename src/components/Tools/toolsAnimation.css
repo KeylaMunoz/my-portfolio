@@ -1,10 +1,3 @@
-.animation-container {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    margin: 0%;
-  }
- 
   
   .central-image {
     display: flex;
@@ -21,34 +14,11 @@
     
   }
   
-  .orbit{
-    position: absolute;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    gap: 3%;
-    transform: translate(0%, -30%);
-  }
-  @media (min-width: 768px) {
-  .orbit {
-    transform: translateY(-60%);
-  }
-}
-
-@media (min-width: 1200px) {
-  .orbit {
-    transform: translateY(-190%);
-  }
-}
   .tools-icon {
   text-align: center;
     
   }
-  
-  .tools-icon img {
-    width: 5vw;
-    height: auto;
-  }
+
   
   .tools-icon:nth-child(1) {
     animation: rotate 10s infinite ease-in-out; 

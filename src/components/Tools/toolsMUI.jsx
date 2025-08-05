@@ -28,22 +28,13 @@ const ToolsMUI = () => {
   }, []);
 
   return (
-    <Box className="animation-container">
-      <Box className="central-image">
-        <Box
-          component="img"
-          src="/img/laptop.png"
-          alt="laptop"
-          className="laptop"
-        />
+      <Box className="animation-container">
+          <Box sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 5, mt: {xs: "10%", sm: "5%", lg: "7%"}, mb: {xs: "10%", sm: "5%", lg: "7%"}}}>
+              {tools.map((tool) => (
+                <IconsMUI key={tool.id} tool={tool} />
+              ))}
+          </Box>
       </Box>
-
-      <Box className="orbit" sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 2,}}>
-        {tools.map((tool) => (
-          <IconsMUI key={tool.id} tool={tool} />
-        ))}
-      </Box>
-    </Box>
   );
 };
 

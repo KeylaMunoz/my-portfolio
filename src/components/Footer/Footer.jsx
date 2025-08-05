@@ -1,33 +1,67 @@
-import { useTranslation} from 'react-i18next';
-import './footer.css'
+import { useTranslation } from 'react-i18next';
+import { Box, Grid, Typography, IconButton, Link } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-    return (
-        <div>
-            <div className='containerFooter'>
-                <div className='contactoF'>
-                    <p>{t('contactame')}</p>
-                    <p>keyla.keyla.munoz@gmail.com</p>
-                    <p>+54 9 381 3644789</p>
-                </div>
-                <div className='divImg'>
-                    <a href="https://github.com/KeylaMunoz" target="_blank">
-                        <img src="/img/github.png" alt="gitHub" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/keyla-abigail-mu%C3%B1oz-1b1755287/" target="_blank">                      
-                        <img src="/img/linkedin.png" alt="linkedin" />
-                    </a>
-                </div>
-                <div>
-                    <p>{t('marca')}</p>
-                    <p>{t('derechos')}</p>
-                    <p>Argentina.</p>
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <Box
+      component="footer"
+      sx={{
+        backgroundColor: 'rgba(255, 255, 255, 0.34)',
+        width: '100%',
+        py: 2,
+        px: 3,
+        mt: 'auto',
+      }}
+    >
+      <Grid
+        container
+        spacing={2}
+        justifyContent="space-between"
+        alignItems="center"
+        textAlign={{ xs: 'center', sm: 'left' }}
+      >
+        {/* Contacto */}
+        <Grid item xs={12} sm={4}>
+          <Typography variant="body2">{t('contactame')}</Typography>
+          <Typography variant="body2">keyla.keyla.munoz@gmail.com</Typography>
+          <Typography variant="body2">+54 9 381 3644789</Typography>
+        </Grid>
 
-export default Footer
+        {/* Íconos de redes */}
+        <Grid item xs={12} sm={4} display="flex" justifyContent="center" gap={1}>
+          <IconButton
+            component={Link}
+            href="https://github.com/KeylaMunoz"
+            target="_blank"
+            rel="noopener"
+            color="inherit"
+          >
+            <GitHubIcon />
+          </IconButton>
+          <IconButton
+            component={Link}
+            href="https://www.linkedin.com/in/keyla-abigail-mu%C3%B1oz-1b1755287/"
+            target="_blank"
+            rel="noopener"
+            color="inherit"
+          >
+            <LinkedInIcon />
+          </IconButton>
+        </Grid>
+
+        {/* Marca y derechos */}
+        <Grid item xs={12} sm={4}>
+          <Typography variant="body2">{t('marca')}</Typography>
+          <Typography variant="body2">{t('derechos')}</Typography>
+          <Typography variant="body2">Argentina.</Typography>
+        </Grid>
+      </Grid>
+    </Box>
+  );
+};
+
+export default Footer;
