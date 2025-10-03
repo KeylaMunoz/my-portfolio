@@ -29,7 +29,7 @@ const Projects = () => {
                     skills: projectInfo.skills
                 };
             })
-            setProjects(data)
+            setProjects(data.slice(0, 4))
         }) 
         .catch((error) => {
             console.log(error)

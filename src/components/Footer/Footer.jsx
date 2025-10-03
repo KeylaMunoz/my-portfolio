@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+ import { useTranslation } from 'react-i18next';
 import { Box, Grid, Typography, IconButton, Link } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

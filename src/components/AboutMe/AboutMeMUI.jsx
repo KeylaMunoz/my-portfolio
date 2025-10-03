@@ -45,7 +45,7 @@ const AboutMe = () => {
                             <Button
                             variant="contained"
                             color="primary" 
-                            href="https://drive.google.com/file/d/19e65tFQ0R0EOC8QVVD4nyM-V4cMEZWtN/view?usp=sharing"  target='_blank'
+                            href="https://drive.google.com/file/d/1vbju94ZTn-o94C4s13DHF1lERy0BMyxS/view?usp=sharing"  target='_blank'
                             sx={{
                                 mb: "4%"
                             }}
